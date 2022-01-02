@@ -1,0 +1,36 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;700;800&family=Open+Sans:wght@400;700&family=Rubik:wght@300;400;500&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;700;800&family=Open+Sans:wght@400;700&family=Quicksand:wght@300;400;500;600;700&family=Rubik:wght@300;400;500&display=swap');
+
+
+/* ===================== public style ======================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color:var(--firstColorGreen); */
+    /* font-family: 'Mukta Mahee', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+
+ }
+
+ body{
+     background-color: rgb(209, 198, 198);
+ }
+
+ :root{
+--firstColorGreen: green ;
+--secondColorBlack: black ; 
+ }
+
+
+ /* في الهوفر الترانزشن مش بتشتغل مع الدسبلاي ...  */
+
+
+/* ===================== start navbar ======================= */
+
+
+
+/* ===================== end navbar ======================= */
