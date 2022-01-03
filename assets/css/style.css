@@ -17,12 +17,13 @@
  }
 
  body{
-     background-color: rgb(209, 198, 198);
+     background-color: #fff;
+     /* font-size: 18px; */
  }
 
  :root{
---firstColorGreen: green ;
---secondColorBlack: black ; 
+--firstColorGreen: #009961 ;
+--secondColorBlack: #333333 ; 
  }
 
 
@@ -31,6 +32,32 @@
 
 /* ===================== start navbar ======================= */
 
+ 
+.greenNavBtn{
+    background-color: var(--firstColorGreen);
+}
 
+nav .logo_section{
+    /* width: 180px;
+    height: 40px; */
+    width: 12%;
+    /* margin-left: 6%; */
+}
+nav .logo_section img{
+    width: 100%;
+}
+ 
+.navbar-light .navbar-nav .nav-link.active{
+    color:var(--firstColorGreen);
+}
+
+.navbar-light .navbar-nav .nav-link{
+color: var(--secondColorBlack);
+font-weight: bold;
+/* padding-right: 5%; */
+
+}
+
+ 
 
 /* ===================== end navbar ======================= */
