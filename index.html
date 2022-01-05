@@ -17,18 +17,33 @@
 
             <!--======================== start the navbar =======================-->
             
-                <nav class="navbar navbar-expand-lg navbar-light bg-white mt-3 d-flex justify-content-between al">
+                <nav class="navbar navbar-expand-lg mt-3 d-flex justify-content-between al">
 
                         <a href="" class="logo_section">
                            <img src="./assets/img/logo-dark.png" alt="logo">
                         </a>
- 
+
+                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars d-block d-lg-none" > </i> 
+                       </button>
+
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav m-auto">
 
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home </a>
+                                <li class="nav-item active ">
+                                    <a class="nav-link " href="#"> Home </a>
+
+                                        <ul class="nav-drop-down">
+                                            <li class="drop-item"> <a href="#" class="drop-link"> drob item droop </a> </li>
+                                            <li class="drop-item"> <a href="#" class="drop-link"> drob item </a> </li>
+                                            <li class="drop-item"> <a href="#" class="drop-link"> drob item </a> </li>
+                                            <li class="drop-item"> <a href="#" class="drop-link"> drob item </a> </li>
+                                            <li class="drop-item"> <a href="#" class="drop-link"> drob item </a> </li>
+                                            <li class="drop-item"> <a href="#" class="drop-link"> drob item </a> </li>
+                                        </ul>
+
                                 </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">About</a>
                                 </li>
@@ -37,6 +52,14 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link " href="#">Projects</a>
+
+                                    <ul class="nav-drop-down">
+                                        <li class="drop-item"> <a href="#" class="drop-link"> drob item droop </a> </li>
+                                        <li class="drop-item"> <a href="#" class="drop-link"> drob item </a> </li>
+                                        <li class="drop-item"> <a href="#" class="drop-link"> drob item </a> </li>
+                                       
+                                    </ul>
+
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Pages</a>
@@ -54,7 +77,7 @@
                             </ul>
                         </div>
     
-                    <button type="button" class="btn btn-full-back greenNavBtn "> GET A QUOTE </button>
+                    <button type="button" class="btn btn-full-back d-none d-lg-block "> GET A QUOTE </button>
 
                             <!-- mr-5 pl-3 pr-3 pt-2 pb-2 font-weight-bold border-0 -->
 

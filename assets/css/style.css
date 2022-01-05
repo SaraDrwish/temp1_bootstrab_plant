@@ -1,18 +1,16 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;700;800&family=Open+Sans:wght@400;700&family=Rubik:wght@300;400;500&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;700;800&family=Open+Sans:wght@400;700&family=Quicksand:wght@300;400;500;600;700&family=Rubik:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;700&family=Open+Sans:wght@400;700&family=Quicksand:wght@300;400;500;600;700&family=Rubik:wght@300;400;500&display=swap');
 
-
+ 
 /* ===================== public style ======================= */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color:var(--firstColorGreen); */
-    /* font-family: 'Mukta Mahee', sans-serif; */
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
+    list-style: none;
 
  }
 
@@ -26,38 +24,257 @@
 --secondColorBlack: #333333 ; 
  }
 
-
  /* في الهوفر الترانزشن مش بتشتغل مع الدسبلاي ...  */
-
 
 /* ===================== start navbar ======================= */
 
- 
-.greenNavBtn{
+/* .greenNavBtn{
     background-color: var(--firstColorGreen);
+} */
+
+nav{
+    /* background-color: rgb(218, 210, 210); */
+    /* padding: 4% 0; */
 }
 
 nav .logo_section{
     /* width: 180px;
     height: 40px; */
-    width: 12%;
-    /* margin-left: 6%; */
+    /* width: 12%; */
+    width: 170px;
+    margin-left: 6%;
 }
 nav .logo_section img{
     width: 100%;
 }
- 
-.navbar-light .navbar-nav .nav-link.active{
-    color:var(--firstColorGreen);
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.navbar-light .navbar-nav .nav-link{
-color: var(--secondColorBlack);
-font-weight: bold;
-/* padding-right: 5%; */
+/* .navbar-nav .nav-link.active{
+color: var(--firstColorGreen);
+} */
 
+.navbar-nav .nav-link{
+        color: var(--secondColorBlack);
+        font-weight: bold;
+        /*padding-right: 5%;
+        */
+        
+        padding: 0px;
+        font-size: 18px;
+        transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        display: inline-block;
 }
 
- 
+.navbar-nav .nav-item{
+ margin: 0 1%;
+ position: relative;
 
-/* ===================== end navbar ======================= */
+  /* transition:all .4s ease;
+ -webkit-transition:all .4s ease;
+ -moz-transition:all .4s ease;
+ -ms-transition:all .4s ease;
+ -o-transition:all .4s ease; */
+}
+ 
+.navbar-nav .nav-item .nav-link:hover{
+    color: var(--firstColorGreen);
+}
+
+.navbar-nav .nav-item::before{
+    content: ' [ ';
+    position: absolute;
+    top: -4px;
+    left: -8px;
+    font-size: 20px;
+    color: var(--firstColorGreen);
+    /* display: inline-block; */
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.navbar-nav .nav-item::after{
+    content: ' ] ';
+    position: absolute;
+    top: -4px;
+    right: -8px;
+    font-size: 20px;
+    color: var(--firstColorGreen);
+    /* display: inline-block; */
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.navbar-nav .nav-item:hover::after{
+    right: -4px;  
+}
+
+.navbar-nav .nav-item:hover::before{
+    left: -4px;
+} 
+
+
+.navbar-nav .nav-item:hover::before , .navbar-nav .nav-item:hover::after ,
+.navbar-nav .nav-item.active::before , .navbar-nav .nav-item.active::after ,.navbar-nav .nav-item.active .nav-link {
+    opacity: 1;
+    visibility:visible;
+    color: var(--firstColorGreen);
+}
+
+
+
+/*------- start drop down style -----------*/
+
+
+.navbar-nav .nav-item .nav-drop-down{
+   position: absolute;
+   top:44px;
+   left: -14%;
+   width: 188px;
+   /*height: 0%;
+   */background-color: var(--firstColorGreen);
+   /*margin: 11%;
+   */padding: 11%;
+   transition: all 0.5s ease;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -ms-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   /*visibility: hidden;
+   opacity: 0;
+   */
+   
+   transform:scaleY(0) ;
+   -webkit-transform:scaleY(0) ;
+   -moz-transform:scaleY(0) ;
+   -ms-transform:scaleY(0) ;
+   -o-transform:scaleY(0) ;
+
+   transform-origin: left top;
+}
+
+.navbar-nav .nav-item:hover .nav-drop-down{
+    /*visibility: visible;
+    opacity: 1;
+    *//*height: 100%;
+    */transform:scaleY(1) ;
+    -webkit-transform:scaleY(1) ;
+    -moz-transform:scaleY(1) ;
+    -ms-transform:scaleY(1) ;
+    -o-transform:scaleY(1) ;
+}
+  .navbar-nav .nav-item .nav-drop-down .drop-item{
+    margin:5% 12%;
+}
+
+.navbar-nav .nav-item .nav-drop-down .drop-item .drop-link{
+    color: white;
+    display: inline-block;
+    /* padding: 4%; */
+    margin: 6% 1%;
+}
+
+/*------------ end drop down style--------- */
+
+
+
+/*  start style to botom nav  */
+
+.btn{
+    background-color: var(--firstColorGreen);
+    color: white;
+    margin-right: 6%;
+    /*padding:1% 2%;
+    */padding: 11px 26px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    overflow: hidden;
+    position: relative;
+    z-index:1;
+}
+
+.btn:hover{
+    color: var(--firstColorGreen);
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 180px;
+    height: 111px;
+    top: 0;
+    left: 0;
+    transform: translate(-127px , 38px) rotate(-44deg);
+    -webkit-transform: translate(-127px , 38px) rotate(-44deg);
+    -moz-transform: translate(-127px , 38px) rotate(-44deg);
+    -ms-transform: translate(-127px , 38px) rotate(-44deg);
+    -o-transform: translate(-127px , 38px) rotate(-44deg);
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    z-index:-1;
+    color: var(--firstColorGreen);
+}
+
+.btn:hover:before{
+   transform:translate(-7px , -57px) rotate(2deg);
+   -webkit-transform:translate(-7px , -57px) rotate(2deg);
+   -moz-transform:translate(-7px , -57px) rotate(2deg);
+   -ms-transform:translate(-7px , -57px) rotate(2deg);
+   -o-transform:translate(-7px , -57px) rotate(2deg);
+}
+
+/* end  botom nav  */
+
+/* --------  start toggle icone style  ---------- */
+
+.navbar-toggler i{
+    color: var(--firstColorGreen);
+}
+
+/* -------- end toggle icone style  ---------- */
+
+
+
+
+
+
+@media(max-width:991px){
+    
+}
+
+
+
+
+
+
+/* ===================== end navbar style ======================= */
