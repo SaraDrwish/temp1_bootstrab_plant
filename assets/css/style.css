@@ -1098,7 +1098,6 @@ height: 26%;
 
 @media (max-width:1125px) {
 
-
     /* .section2 .container .row .cards-section .card img{
         width: 34%;
         height: 34%;
@@ -1123,8 +1122,6 @@ height: 26%;
     }
     
 }
-
-
 
 /* ======================================= */
 
@@ -1155,23 +1152,88 @@ height: 26%;
     
 } */
 
-
 /* ===================================================end the media and section 2 cards ==================================================== */
 
-.section3-about .container .row{
-    justify-content: space-between;
-    align-items: center;
+
+
+/* =======================================start about section3================================================= */
+
+.section3-about {
+margin: 10% 0;
 }
 
 .section3-about .about-img-box{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 .section3-about .about-img-box img{
  width: 100%;
 }
-
 .section3-about .about-content-box{
     /* display: flex;
     justify-content:flex-start; */
 }
+
+.section3-about .about-content-box .reabeat-content{
+
+}
+
+/* ============================================================= */
+
+.reabeat-content{
+
+}
+.reabeat-content .title{
+    color: var(--firstColorGreen);
+    font-size: 18px;
+    margin: 2% 0;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+} 
+.reabeat-content h1{
+    font-weight: 700;
+    font-size: 38px;
+    margin: 0 0 12% 0;
+    position: relative;
+}
+.reabeat-content h1::after{
+    content: '';
+    position: absolute;
+    width: 7%;
+    border-bottom: var(--firstColorGreen) 4px solid;
+    bottom: -29%;
+    left: 0;
+}
+
+/* ================================================================== */
+
+.about-content-box .about-notreapeat-content p{
+    margin: 8% 0;
+    font-weight: 500;
+    font-size: 15px;
+    width: 90%;
+}
+
+/* .about-content-box .about-notreapeat-content .row{
+    justify-content: space-around;
+} */
+
+.about-content-box .about-notreapeat-content ul{
+    margin: 0;
+}
+
+.about-content-box .about-notreapeat-content ul li i{
+    color: var(--firstColorGreen);
+    font-size: 12px;
+    /* margin: 0 2% 0; */
+    padding: 0 2% 0 ;
+    /* font-weight: 500; */
+} 
+.about-content-box .about-notreapeat-content ul li{
+     font-size: 15px;
+     font-weight: 500;
+     color: rgb(114, 114, 114);
+     padding: 0 0 0% 2% ;
+     line-height: 2.4;
+  } 
