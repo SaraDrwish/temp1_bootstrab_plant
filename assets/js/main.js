@@ -21,6 +21,10 @@ $(".nav-item").click( function(){
 
 })
 
+$(window).scroll(function() {
+    $(".navbar").toggleClass("scrolling" , $(this).scrollTop() > 50);
+})
+
 
 
 }
