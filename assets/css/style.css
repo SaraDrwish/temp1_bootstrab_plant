@@ -1237,3 +1237,38 @@ margin: 10% 0;
      padding: 0 0 0% 2% ;
      line-height: 2.4;
   } 
+
+
+
+  /* ==================================== end sec 3 about ========================================= */
+
+
+  /* start green sec4======================================================= */
+
+
+  .sec4green{
+      /* background-color: var(--firstColorGreen); */
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background-image: url(../img/call-to-action-2.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      
+  }
+
+
+  .sec4green .wBagroundSecndBox{
+
+      background-color: whitesmoke;
+      border-radius: 55px;
+      -webkit-border-radius: 55px;
+      -moz-border-radius: 55px;
+      -ms-border-radius: 55px;
+      -o-border-radius: 55px;
+      width: 80%;
+      position: absolute;
+        left: 9%;
+        bottom: -30%;
+
+}
