@@ -1297,7 +1297,26 @@ margin: 10% 0;
       */
 }
 
-/* -------------------------------------------------- */
+.wBagroundSecndBox .wightBox{
+    margin: 0 auto;
+    text-align: center;
+}
+.wBagroundSecndBox .wightBox span{
+    color: var(--firstColorGreen);
+    font-size: 53px;
+    font-weight: 700;
+    margin: 0 -6%;
+  
+}
+.wBagroundSecndBox .wightBox p{
+    font-size:19px;
+    font-weight: 600;
+    color: var(--secondColorBlack);
+}
+
+
+
+/* ---------------------------------------start sec 5 -------------------------------------------------------------- */
 
 .sec5 {
 
