@@ -1458,7 +1458,6 @@ text-align: center;
 .sec5 .servsBox ul{
     /* display: inline-block; */
     /* margin: 1% auto; */
-
 }
 
 .sec5 .servsBox ul li{
@@ -1466,14 +1465,27 @@ text-align: center;
     padding: 3% 4%;
     margin: 0.5%;
     /*background-color: whitesmoke;
-    */
-    border-radius:9px;
+    */border-radius:8px;
+    -webkit-border-radius:9px;
+    -moz-border-radius:9px;
+    -ms-border-radius:9px;
+    -o-border-radius:9px;
     box-shadow: 0 0 30px rgb(228 219 219 / 50%);
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+
+.sec5 .servsBox ul li:hover{
+    border-bottom: var(--firstColorGreen) 3px solid;
 }
 
 .sec5 .servsBox ul li a{
     display: block;
     text-align: center;
+    /* margin: 1%; */
 }
 .sec5 .servsBox ul li a i{
     color: var(--firstColorGreen);
@@ -1482,5 +1494,32 @@ text-align: center;
 }
 
 
+/* -----------------------media servs sec5 ------------------------------- */
 
-/* ------------------------------------------------------ */
+
+@media (max-width:992px) {
+
+    
+.sec5 {
+    width: 100%;
+}
+ .sec5 .reabeat-content{
+width: 50%;
+padding: 4% 0;
+}
+
+.sec5 .servsBox ul li{
+    display:block;
+    padding: 4% 5%;
+    margin: 2%;
+    text-align: center;
+}
+.sec5 .servsBox ul li a{
+    margin: 1% 0;
+}
+
+
+}
+
+
+/* =================================================================== */
