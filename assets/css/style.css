@@ -1305,7 +1305,7 @@ margin: 10% 0;
     color: var(--firstColorGreen);
     font-size: 53px;
     font-weight: 700;
-    margin: 0 -6%;
+    /* margin: 0 -6%; */
   
 }
 .wBagroundSecndBox .wightBox p{
