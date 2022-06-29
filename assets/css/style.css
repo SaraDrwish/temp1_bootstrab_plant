@@ -1875,7 +1875,7 @@ form button{
 /* ---------------------------------------start sec 11 ---------------------------------- */
 
 .sec11{
-    margin: 10% 0;
+    margin: 6% -2%;
     /* background-color: #FAFAFA; */
    
 }
@@ -1886,12 +1886,13 @@ form button{
     /* margin:1% auto; */
     width: 100%;
     /* padding: 1%; */
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
  .sec11 .brand-box{
     position: relative;
     height: 120px;
+    width: 100%;
     /* width: 120px; */
 }
  .sec11 .brand-box .lin11imgboxtop{ 
@@ -1909,8 +1910,8 @@ form button{
     top:0%; 
  }
  .sec11 .brand-box:hover .lin11imgboxtop img{
-/* width: 100%; */
-/* height: 100%; */
+width: 100%;
+height: 100%;
  }
  .sec11 .brand-box .lin11imgboxbtm{
 position: absolute;
@@ -1926,9 +1927,93 @@ transition: all .3s ease;
      bottom: -111%;
 }
 .sec11 .brand-box .lin11imgboxbtm img{
-    /* width: 100%; */
+    width: 100%;
     /* height: 100%; */
 }
+
+
+
+/* --------------------------------- */
+
+
+@media (max-width:992px) {
+    
+    .sec11 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .sec11 .brand-box{
+        overflow: hidden;
+        flex-direction: column;
+          /* width:calc(100% / 6); */
+          /* width: 20%; */
+          padding:1% !important;
+
+     }
+     /* .sec11 .brand-box .lin11imgboxbtm img{
+        width: 100%;
+        height: 100%;
+    } */
+    .sec11 .brand-box .lin11imgboxtop{ 
+        top: -100%;
+    }
+     .sec11 .brand-box:hover .lin11imgboxbtm{
+         bottom: -100%;
+    }
+
+    .sec11 .brand-box{
+        /* height:99px; */
+     }
+
+
+ }
+
+ @media (max-width:575px) {
+    
+    .sec11 {
+        width: 100%;
+        display: flex;
+        /* flex-wrap:nowrap; */
+        justify-content:center;
+        align-items: center;
+        flex-direction:row;
+        overflow: hidden;
+    }
+    .sec11 .brand-box{
+        overflow: hidden;
+        flex-direction: column;
+        padding:1% !important;
+          /* width:calc(100% / 6); */
+          /* width: 40%; */
+     }
+     /* .sec11 .brand-box .lin11imgboxbtm  {
+        width: 40%;
+    }
+    .sec11 .brand-box .lin11imgboxtop  {
+        width: 40%;
+    } */
+
+    .sec11 .brand-box{
+         /* height:99px; */
+      }
+    
+    .sec11 .brand-box .lin11imgboxtop{ 
+        bottom: -100%;
+    }
+     .sec11 .brand-box:hover .lin11imgboxbtm{
+         bottom: -100%;
+    }
+
+
+ }
+
+
+
 
 
 /* ---------------------------------------end sec 11 ---------------------------------- */
@@ -1951,4 +2036,137 @@ transition: all .3s ease;
 }
 
 /* =============================== end the footer=========================================== */
+
+
+
+/* <!-- ===================================---------===loder========================================================================= --> */
+
+
+ .filterBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    }
+    
+ .filterBtn li{
+        background-color: #009961;
+        padding:18px 28px;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+        color: cornsilk;
+        cursor: pointer;
+    }
+.filterBtn li.active{
+        background-color: rgb(66, 62, 62);
+    }
+    
+    .containerItems{
+    width: 85%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 4%; */
+    /* background-color: darkcyan; */
+    }
+    
+    .containerItems .items{
+        margin: 1%;
+        /* width: 25%; */
+        height: 350px;
+        width:320px;
+    }
+    
+    .containerItems .items.hiddin{
+        opacity: 0.5;
+        /* visibility: hidden; */
+    }
+    .containerItems .items.visble{
+        opacity:1;
+        /* visibility: visible; */
+    }
+    
+    .containerItems .items img{
+        /* width:320px; */
+        height: 350px; 
+        width: 100%;
+    }
+    
+    .laoder{
+        background-color: rgba(156, 218, 183, 0.76);
+        z-index: 10000000;
+
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .laoder.fadOut{
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .spinner {
+        background-color: transparent;
+        margin: 100px auto;
+        width: 40px;
+        height: 40px;
+        position: relative;
+      }
+      
+      .cube1, .cube2 {
+        background-color: rgb(77, 70, 70);
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+        animation: sk-cubemove 1.8s infinite ease-in-out;
+    }
+      
+      .cube2 {
+        -webkit-animation-delay: -0.9s;
+        animation-delay: -0.9s;
+      }
+      
+      @-webkit-keyframes sk-cubemove {
+        25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+        50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+        75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+        100% { -webkit-transform: rotate(-360deg) }
+      }
+      
+      @keyframes sk-cubemove {
+        25% { 
+          transform: translateX(42px) rotate(-90deg) scale(0.5);
+          -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+        } 50% { 
+          transform: translateX(42px) translateY(42px) rotate(-179deg);
+          -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+        } 50.1% { 
+          transform: translateX(42px) translateY(42px) rotate(-180deg);
+          -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+        } 75% { 
+          transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+          -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+        } 100% { 
+          transform: rotate(-360deg);
+          -webkit-transform: rotate(-360deg);
+        }
+      }
+
+
+
+/* <!-- ======================================loder========================================================================= --> */
+
+
 
