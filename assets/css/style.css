@@ -1608,7 +1608,9 @@ padding: 4% 0;
 
 .sec6{
     margin: 10% 0;
-    /* width: 100%; */
+    width: 100%;
+    overflow: hidden;
+    padding: 2%;
 }
 .sec6 .container6{
     text-align: center;
@@ -1618,7 +1620,7 @@ padding: 4% 0;
     justify-content: space-between;
     align-items: center;
     gap:9%;
-    padding: 0 4%;
+    /* padding: 0 4%; */
 }
 .sec6  .reabeat-content h1::after {
     content: '';
@@ -1646,10 +1648,12 @@ padding: 4% 0;
     -ms-transform: scale(.9);
     -o-transform: scale(.9);
     cursor: pointer;
+    /* width: 440px;
+    height: 420px; */
 }
 .sec6  .img-box-6 img{
-       width: 440px;
-       height: 420px;
+       width: 100%;
+       height: 100%;
        border-radius:25px ;
        -webkit-border-radius:25px ;
        -moz-border-radius:25px ;
@@ -1664,15 +1668,12 @@ padding: 4% 0;
 .sec6 .img-box-6 .imgbox{
     overflow: hidden;
     border-radius:25px ;
-    -webkit-border-radius:25px ;
-    -moz-border-radius:25px ;
-    -ms-border-radius:25px ;
-    -o-border-radius:25px ;
-
+   
 }
 .sec6  .img-box-6 .bouttn-img-box{
-    width: 340px;
-    height: 100px;
+    /* width: 340px;
+    height: 100px; */
+    width: 88%;
     transition:all .5s ease ;
     -webkit-transition:all .5s ease ;
     -moz-transition:all .5s ease ;
@@ -1879,20 +1880,24 @@ form button{
    
 }
  
-/* .sec11 .lin11{
-    display: flex;
-    justify-content: space-around;
-   
-} */
+.sec11 .lin11{
+    /* display: flex;
+    justify-content: space-around; */
+    /* margin:1% auto; */
+    width: 100%;
+    /* padding: 1%; */
+    /* overflow: hidden; */
+}
 
  .sec11 .brand-box{
     position: relative;
     height: 120px;
-    overflow: hidden;
+    /* width: 120px; */
 }
  .sec11 .brand-box .lin11imgboxtop{ 
     position: absolute; 
     top: -122%;
+    width: 100%;
      /*background-color: aqua; */
      transition: all .3s ease;
       -webkit-transition: all .3s ease;
@@ -1901,12 +1906,16 @@ form button{
          -o-transition: all .3s ease;
 }
  .sec11 .brand-box:hover .lin11imgboxtop{
-    top:0%;
-    
+    top:0%; 
+ }
+ .sec11 .brand-box:hover .lin11imgboxtop img{
+/* width: 100%; */
+/* height: 100%; */
  }
  .sec11 .brand-box .lin11imgboxbtm{
 position: absolute;
 bottom: 0%;
+width: 100%;
 transition: all .3s ease;
 -webkit-transition: all .3s ease;
  -moz-transition: all .3s ease;
@@ -1915,6 +1924,10 @@ transition: all .3s ease;
  }
  .sec11 .brand-box:hover .lin11imgboxbtm{
      bottom: -111%;
+}
+.sec11 .brand-box .lin11imgboxbtm img{
+    /* width: 100%; */
+    /* height: 100%; */
 }
 
 
